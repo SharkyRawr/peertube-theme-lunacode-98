@@ -1,0 +1,200 @@
+@import url("https://unpkg.com/98.css");
+
+:root {
+  --pt98-desktop: #008080;
+  --pt98-panel: #c0c0c0;
+  --pt98-text: #000;
+  --pt98-link: #0000ff;
+  --pt98-link-visited: #551a8b;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body.pt98-theme {
+  background-color: var(--pt98-desktop) !important;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.15) 1px, transparent 0);
+  background-size: 4px 4px;
+  color: var(--pt98-text);
+  font-family: "Pixelated MS Sans Serif", "MS Sans Serif", Tahoma, sans-serif;
+}
+
+body.pt98-theme #content,
+body.pt98-theme main {
+  background: transparent !important;
+}
+
+body.pt98-theme .pt98-taskbar {
+  border: none;
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #fff,
+    inset -2px -2px grey,
+    inset 2px 2px #dfdfdf;
+  background: #c0c0c0 !important;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+}
+
+body.pt98-theme .pt98-window {
+  border: none;
+  background: var(--pt98-panel);
+  color: var(--pt98-text);
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #fff,
+    inset -2px -2px grey,
+    inset 2px 2px #dfdfdf;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+body.pt98-theme .pt98-window-with-title {
+  padding: 0;
+}
+
+body.pt98-theme .pt98-title-bar {
+  margin: 0;
+}
+
+body.pt98-theme .pt98-window-body {
+  padding: 10px;
+}
+
+body.pt98-theme .pt98-window .pt98-window {
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+body.pt98-theme .pt98-start-button {
+  font-weight: 700;
+  gap: 6px;
+}
+
+body.pt98-theme .pt98-start-icon {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #0aa,
+    inset -2px -2px #044,
+    inset 2px 2px #4ff;
+  background: #008080;
+}
+
+body.pt98-theme .pt98-clock {
+  margin-left: auto;
+  min-width: 80px;
+  text-align: center;
+}
+
+body.pt98-theme .pt98-window h1,
+body.pt98-theme .pt98-window h2,
+body.pt98-theme .pt98-window h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+body.pt98-theme .pt98-button,
+body.pt98-theme a.pt98-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  min-width: 75px;
+  padding: 0 12px;
+  color: #222;
+  text-decoration: none;
+}
+
+body.pt98-theme .pt98-button:not(:disabled),
+body.pt98-theme a.pt98-button {
+  border: none;
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #fff,
+    inset -2px -2px grey,
+    inset 2px 2px #dfdfdf;
+  background: #c0c0c0 !important;
+}
+
+body.pt98-theme .pt98-button:active:not(:disabled),
+body.pt98-theme a.pt98-button:active {
+  box-shadow:
+    inset -1px -1px #fff,
+    inset 1px 1px #0a0a0a,
+    inset -2px -2px #dfdfdf,
+    inset 2px 2px grey;
+  padding-top: 1px;
+  padding-left: 1px;
+}
+
+body.pt98-theme input.pt98-field,
+body.pt98-theme textarea.pt98-field,
+body.pt98-theme select.pt98-field {
+  border: none;
+  box-shadow:
+    inset -1px -1px #fff,
+    inset 1px 1px grey,
+    inset -2px -2px #dfdfdf,
+    inset 2px 2px #0a0a0a;
+  background: #fff;
+  color: #000;
+  font-family: inherit;
+}
+
+body.pt98-theme a {
+  color: var(--pt98-link);
+}
+
+body.pt98-theme a:visited {
+  color: var(--pt98-link-visited);
+}
+
+body.pt98-theme .modal-content,
+body.pt98-theme .dropdown-menu,
+body.pt98-theme .video-js,
+body.pt98-theme .notification,
+body.pt98-theme .channel-information,
+body.pt98-theme .video-description,
+body.pt98-theme .video-miniature {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #fff,
+    inset -2px -2px grey,
+    inset 2px 2px #dfdfdf !important;
+  background: var(--pt98-panel) !important;
+}
+
+body.pt98-theme .video-miniature img,
+body.pt98-theme video {
+  image-rendering: pixelated;
+}
+
+body.pt98-theme ::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+body.pt98-theme ::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+
+body.pt98-theme ::-webkit-scrollbar-thumb {
+  border: none;
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #fff,
+    inset -2px -2px grey,
+    inset 2px 2px #dfdfdf;
+  background: #c0c0c0;
+}
